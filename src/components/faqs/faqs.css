@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+.faqscontainer *{
+    font-family: "League Spartan",sans-serif;
+}
+.faqscontainer{
+    width: 100%;
+    height: max-content;
+    padding: 80px 20px;
+    overflow: hidden;
+    background: linear-gradient(to bottom,#0b0b08 0%,#0b0b08 15%,#370812 100%);
+}
+.faqstitle{
+    text-align: center;
+    color: aquamarine;
+    font-size:30px;
+    font-weight: bold;
+    font-family: "StateWide",sans-serif;
+    margin-bottom: 15vh;
+    text-shadow: rgb(230, 230, 230) 0px 0px 5px;
+}
+
+[data-aos="fade-right"] {
+  transform: translateX(500px); /* default was 50px */
+  opacity: 0;
+}
+
+[data-aos="fade-left"] {
+  transform: translateX(-500px); /* default was -50px */
+  opacity: 0;
+}
+.faqs{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+.faq{
+    width: 50%; 
+}
+.up{
+    transform: rotate(180deg);
+    transition: transform 0.05s;
+}
+.question{
+    padding: 5px 12px;
+    color: aqua;
+    border: 1px solid aqua;
+    border-radius: 5px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.question img{
+    width: 25px;
+    cursor: pointer;
+}
+.answer-wrapper{
+    /* display: none; */
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.05s linear;
+}
+.open{
+    max-height: 120px;
+}
+.answer{
+    border: 0.1px solid rgb(134, 123, 123);
+    border-radius: 5px;
+    padding: 8px 12px;
+    color: aquamarine;
+}
+@media screen  and (max-width:1000px){
+    .faq{
+        width: 70%;
+    }
+}
+@media screen  and (max-width:786px){
+    .faq{
+        width: 90%;
+    }
+}
+@media screen  and (max-width:484px){
+    .faq{
+        width: 95%;
+    }
+}

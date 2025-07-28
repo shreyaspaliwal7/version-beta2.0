@@ -1,0 +1,111 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@500&display=swap');
+.aboutcontainer{
+    width: 100%;
+    height: auto;
+    /* background: linear-gradient(to right,#020f1f 0%,#020f1f 100%); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8vh;
+    padding-bottom: 7vh;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    position: relative;
+    background: linear-gradient(45deg, #020f1f 0%,#020f1f 20%,#052733 35%,#0c3757 60%,#020f1f 85%,#020f1f 100%);
+    overflow: hidden;
+    background-size: 300% 300%;
+    animation: gradientMove 8s ease-in-out infinite alternate;
+}
+.aboutfade::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(to bottom,transparent,#0c3757);
+    backdrop-filter: blur(3px);
+    pointer-events: none;
+    z-index: 4;
+}
+
+@keyframes gradientMove {
+  /* 0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; } */
+   to {background-position: 100% 100%;}
+}
+
+.abouttitle{
+    color: aquamarine;
+    font-size:30px;
+    font-weight: bold;
+    font-family: "StateWide",sans-serif;
+    text-shadow: rgb(230, 230, 230) 0px 0px 5px;
+}
+.cont{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5vh;
+}
+
+.about{
+    width: 50%;
+    height: auto;
+    border-radius: 15px;
+    padding: 5px;
+    background: linear-gradient(135deg, #00f0ff, #ff00cc);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+    
+}
+.details{
+    width: 50%;
+    /* color: #8ed97d; */
+    color: rgb(216, 181, 181);
+    color: rgb(219, 174, 207);
+    font-size: 17px;
+    font-family: "Tektur", sans-serif;
+    
+}
+.versionbeta{
+    font-size: 30px;
+    color: #ff00cc;
+    font-family: "League Spartan",sans-serif;
+}
+/* media queries */
+@media screen and (max-width:1168px){
+    .cont{
+        width: 93%;
+    }
+}
+@media screen and (max-width:908px){
+    .cont{
+        flex-direction: column;
+    }
+    .about{
+        width: 80%;
+    }
+    .details{
+        width: 80%;
+    }
+    .abouttitle{
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width:512px){
+    .about{
+        width: 95%;
+        margin-bottom: 20px;
+    }
+    .details{
+        width: 95%;
+    }
+    .aboutcontainer{
+        height: 125vh;
+    }
+
+}
