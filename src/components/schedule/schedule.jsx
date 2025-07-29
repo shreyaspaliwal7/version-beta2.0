@@ -23,7 +23,7 @@ const Schedule = () => {
                     <div className='mt-3 ml-2'>18th Oct</div>
                   </div>
                   <div className="flex">
-                    <img src="src\assets\50.png" width={"50px"} className='mr-3' alt="" />
+                    <img src="https://version-beta.vercel.app/Images/50.png" width={"50px"} className='mr-3' alt="" />
                     <h3 className="text-4xl font-[500] text-[#F68A8A] mb-1  max-md:scale-90 max-md:mb-0">
                       Registration
                     </h3>
@@ -51,7 +51,7 @@ const Schedule = () => {
                     <div className='mt-3 ml-2' >Till 1 Nov</div>
                   </div>
                   <div className="flex">
-                    <img src="src\assets\50.png" width={"50px"} className='mr-3' alt="" />
+                    <img src="https://version-beta.vercel.app/Images/50.png" width={"50px"} className='mr-3' alt="" />
                     <h3 className=" text-4xl font-[500] text-[#F68A8A] mb-1  max-md:scale-90 max-md:mb-0">
                       Ideation
                     </h3>
@@ -77,7 +77,7 @@ const Schedule = () => {
                     <div className='mt-3 ml-2' >2nd Nov</div>
                   </div>
                   <div className="flex">
-                    <img src="src\assets\50.png" width={"50px"} className='mr-3' alt="" />
+                    <img src="https://version-beta.vercel.app/Images/50.png" width={"50px"} className='mr-3' alt="" />
                     <h3 className="text-4xl font-[500] text-[#F68A8A] mb-1  max-md:scale-90 max-md:mb-0">
                       Announcement
                     </h3>
@@ -102,7 +102,7 @@ const Schedule = () => {
                     <div className='mt-3 ml-2' >2-3 Nov</div>
                   </div>
                   <div className="flex">
-                    <img src="src\assets\50.png" width={"50px"} className='mr-3' alt="" />
+                    <img src="https://version-beta.vercel.app/Images/50.png" width={"50px"} className='mr-3' alt="" />
                     <h3 className=" text-4xl font-[500] text-[#F68A8A] mb-1  max-md:scale-90 max-md:mb-0">
                       Team
                     </h3>
@@ -128,7 +128,7 @@ const Schedule = () => {
                     <div className='mt-3 ml-2' >8-10 Nov</div>
                   </div>
                   <div className="flex">
-                    <img src="src\assets\50.png" width={"50px"} className='mr-3' alt="" />
+                    <img src="https://version-beta.vercel.app/Images/50.png" width={"50px"} className='mr-3' alt="" />
                     <h3 className="text-4xl font-[500] text-[#F68A8A] mb-1  max-md:scale-90 max-md:mb-0">
                       Hackathon
                     </h3>
