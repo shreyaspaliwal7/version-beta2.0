@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Hero.css"
+import "./hero.css"
 import { useRef,useEffect,useState } from 'react'
 import { motion } from "framer-motion"
 import version from "../../assets/version.png"
