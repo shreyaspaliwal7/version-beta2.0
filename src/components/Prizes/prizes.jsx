@@ -48,7 +48,7 @@ const Prizes = () => {
       {/* <TwinklingStars/> */}
       <canvas id='confetti-canvas'></canvas>
       <div className="prizescontent">
-         <div className="prizetitle">Prizes</div>
+         <div className="abouttitle">Prizes</div>
          <div className="prizes">
           <div className="second prize">
               <img src={second} data-aos="fade-up" data-aos-delay="200" alt="" />

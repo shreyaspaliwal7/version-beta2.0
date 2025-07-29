@@ -17,7 +17,7 @@ const Faqs = () => {
     setcurrIndex(currIndex==index? -1 : index)
   }
   return (
-    <div className='faqscontainer'>
+    <div className='faqscontainer' id="faqs">
       <div className='faqstitle'>Faqs</div>
       <div className="faqs">
         <div className="faq">

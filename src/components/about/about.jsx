@@ -3,7 +3,7 @@ import "./About.css"
 import about from "../../assets/students.png"
 const About = () => {
   return (
-    <div className='aboutcontainer aboutfade'>
+    <div className='aboutcontainer aboutfade' id="about">
       <div className='abouttitle mt-10'>About</div>
       <div className="cont">
         <img src={about} className='about' data-aos="zoom-in" alt="" />

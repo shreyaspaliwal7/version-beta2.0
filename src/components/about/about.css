@@ -40,10 +40,11 @@
 
 .abouttitle{
     color: aquamarine;
-    font-size:30px;
+    font-size:40px;
     font-weight: bold;
     font-family: "StateWide",sans-serif;
     text-shadow: rgb(230, 230, 230) 0px 0px 5px;
+    font-family: "Tektur", sans-serif;
 }
 .cont{
     width: 75%;
@@ -105,7 +106,7 @@
         width: 95%;
     }
     .aboutcontainer{
-        height: 125vh;
+        height: auto;
     }
 
 }

@@ -1,7 +1,7 @@
-.herocontainer{
+.herocontainer {
     background-color: #020f1f;
     background-image: url("../../assets/hllo3.png");
-                    /* linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
+    /* linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
     background-color: rgba(0, 0, 0, 0.4);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -21,31 +21,35 @@
     /* margin-top: 60px; */
 
 }
-.herofade::after{
+
+.herofade::after {
     content: '';
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 20px;
-    background: linear-gradient(to bottom,transparent,#0c3757);
+    background: linear-gradient(to bottom, transparent, #0c3757);
     backdrop-filter: blur(3px);
     pointer-events: none;
     z-index: 4;
 }
+
 @keyframes bgZoom {
-  0% {
-    background-size: 100%;
-  }
-  50% {
-    background-size: 130%;
-  }
-  100% {
-    background-size: 100%;
-  }
+    0% {
+        background-size: 100%;
+    }
+
+    50% {
+        background-size: 130%;
+    }
+
+    100% {
+        background-size: 100%;
+    }
 }
 
-.lowercontent{
+.lowercontent {
     color: white;
     width: 30%;
     margin: auto;
@@ -56,16 +60,18 @@
     gap: 30px;
     margin-bottom: 7%;
 }
-.countdown{
+
+.countdown {
     display: flex;
     align-items: center;
     gap: 35px;
     font-size: 40px;
-    font-family: "League Spartan",sans-serif;
+    font-family: "League Spartan", sans-serif;
     font-weight: bold;
     color: #b0c2c4;
 }
-.countdown .time{
+
+.countdown .time {
     text-align: center;
     border: 1px solid rgba(255, 255, 255, 0.1);
     width: 90px;
@@ -79,25 +85,29 @@
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
 }
-.countdown .time:hover{
+
+.countdown .time:hover {
     transform: scale(1.05);
     box-shadow: 0 0 25px rgba(4, 240, 255, 0.5);
 }
-.countdown .colon{
-    font-family: "State Wide",sans-serif;
+
+.countdown .colon {
+    font-family: "State Wide", sans-serif;
 }
-.label{
+
+.label {
     display: flex;
     justify-content: space-between;
     gap: 90px;
     font-size: 30px;
-    font-family: "League Spartan",sans-serif;
+    font-family: "League Spartan", sans-serif;
     color: #7b8d52;
     font-weight: bold;
     font-family: Ubuntu;
-    
+
 }
-.content{
+
+.content {
     margin-top: 15%;
     display: flex;
     gap: 10%;
@@ -107,22 +117,25 @@
     position: relative;
     z-index: 3;
 }
-.right{
+
+.right {
     display: flex;
     flex-direction: column;
     /* gap: 20px; */
     width: 52%;
 }
-.right *{
-    font-family: "League Spartan",sans-serif;
+
+.right * {
+    font-family: "League Spartan", sans-serif;
 }
-.title{
+
+.title {
     color: #ff7575;
-    color: 	#00FFF1;
+    color: #00FFF1;
     font-size: 40px;
     height: 19vh;
     /* outline: 1px solid lime; */
-    background: linear-gradient(90deg, #FF4F79, #00FFF1,#FF4F79);
+    background: linear-gradient(90deg, #FF4F79, #00FFF1, #FF4F79);
     -webkit-background-clip: text;
     color: transparent;
     text-shadow: 0px 0px 50px #00FFF1;
@@ -133,17 +146,19 @@
     font-family: Montserrat; */
     font-family: Orbitron;
 }
-.title:hover{
+
+.title:hover {
     text-shadow: 0px 0px 30px #00FFF1;
     transition: text-shadow 0.3s;
 }
-.title1{
+
+.title1 {
     color: #ff7575;
-    color: 	#00FFF1;
+    color: #00FFF1;
     font-size: 40px;
     height: 14vh;
     /* outline: 1px solid lime; */
-    background: linear-gradient(90deg, #FF4F79, #00FFF1,#FF4F79);
+    background: linear-gradient(90deg, #FF4F79, #00FFF1, #FF4F79);
     -webkit-background-clip: text;
     color: transparent;
     text-shadow: 0px 0px 50px #00FFF1;
@@ -154,22 +169,27 @@
     font-family: Montserrat; */
     font-family: Orbitron;
 }
-.title1:hover{
+
+.title1:hover {
     text-shadow: 0px 0px 30px #00FFF1;
     transition: text-shadow 0.3s;
 }
-@keyframes opac{
-    0%{
-        opacity:1;
+
+@keyframes opac {
+    0% {
+        opacity: 1;
     }
-    50%{
-        opacity:0.5;
+
+    50% {
+        opacity: 0.5;
     }
-    100%{
-        opacity:1;
+
+    100% {
+        opacity: 1;
     }
 }
-.subtitle{
+
+.subtitle {
     color: #72FFFF;
     font-size: 30px;
     text-shadow: 0px 0px 20px #00FFF1;
@@ -182,7 +202,8 @@
     font-family: Orbitron;
     margin-bottom: 30px;
 }
-.desc{
+
+.desc {
     font-size: 20px;
     color: #f5cec9;
     color: #72FFFF;
@@ -194,17 +215,19 @@
     font-family: Ubuntu;
     font-family: Orbitron;
     color: #fff;
-     text-shadow:
-    /* 0 0 5px rgba(255,255,255,0.8), */
-    0 0 15px rgba(255,255,255,0.6),
-    /* 0 0 15px rgba(223,102,102,0.8), */
-    0 0 15px rgba(223,102,102,0.6);
+    text-shadow:
+        /* 0 0 5px rgba(255,255,255,0.8), */
+        0 0 15px rgba(255, 255, 255, 0.6),
+        /* 0 0 15px rgba(223,102,102,0.8), */
+        0 0 15px rgba(223, 102, 102, 0.6);
 }
-.version{
+
+.version {
     width: 90%;
     animation: opac 3s infinite ease-in-out;
 }
-.timeline{
+
+.timeline {
     display: flex;
     color: #cbd5e1;
     gap: 15px;
@@ -212,25 +235,28 @@
     font-weight: 600;
     font-family: Poppins;
 }
-.timeline img{
+
+.timeline img {
     width: 18px;
 }
-.date,.place{
+
+.date,
+.place {
     display: flex;
     gap: 12px;
     align-items: center;
-    
+
 }
 
-.name{
+.name {
     color: rgb(255, 244, 225);
     text-shadow: rgb(230, 230, 230) 0px 0px 10px;
     font-size: 45px;
     font-weight: bold;
-    font-family: "StateWide",sans-serif;
+    font-family: "StateWide", sans-serif;
 }
 
-.left{
+.left {
     width: 50%;
     text-align: center;
     display: flex;
@@ -239,27 +265,32 @@
     align-items: center;
     justify-content: center;
 }
-.upper{
+
+.upper {
     animation: color 0.8s ease-in-out 1.5s infinite;
     /* font- */
 }
-.lower{
+
+.lower {
     animation: color 0.8s ease-in-out 1.9s infinite;
     /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 }
-@keyframes color{
-    0%{
-        opacity:1;
+
+@keyframes color {
+    0% {
+        opacity: 1;
     }
-    50%{
-        opacity:0;
+
+    50% {
+        opacity: 0;
     }
-    100%{
-        opacity:1;
+
+    100% {
+        opacity: 1;
     }
 }
 
-.btn{
+.btn {
     font-size: 15px;
     background-color: #1d1d39;
     color: white;
@@ -271,84 +302,108 @@
     font-family: Poppins;
     margin-bottom: 5%;
 }
-@media screen and  (max-width:1200px){
-    .content{
+
+@media screen and (max-width:1200px) {
+    .content {
         width: 93%;
     }
 }
-@media screen and (max-width:1168px){
+
+@media screen and (max-width:1168px) {
     @keyframes bgZoom {
-    0% {
-        background-size: 100%;
+        0% {
+            background-size: 100%;
+        }
+
+        100% {
+            background-size: 100%;
+        }
     }
-    100% {
-        background-size: 100%;
-    }
-   }
 
 }
+
 @media screen and (max-width:800px) {
-    .content{
+    .content {
         flex-direction: column;
     }
-    .left,.right{
+
+    .left,
+    .right {
         width: 100%;
         text-align: center;
     }
-    .version{
+
+    .version {
         margin-top: 160px;
         width: 100%;
         margin-bottom: 50px;
     }
-    .herocontainer{
-        background-image: url("src\assets\heroverticalcut2.png");
+
+    .herocontainer {
+        background-image: url("https://version-beta.vercel.app/Images/heroverticalcut2.png");
+        /* background-image: url('');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center; */
+        /* background-repeat: repeat-y; */
 
         /* background-attachment:unset; */
         min-height: 100vh;
     }
-    .desc{
+
+    .desc {
         width: 100%;
     }
-    .title{
+
+    .title {
         height: 15vh;
         font-size: 40px;
     }
 }
+
 @media screen and (max-width:632px) {
-    .label{
+    .label {
         gap: 25px;
     }
-    .countdown{
+
+    .countdown {
         gap: 7px;
     }
 }
+
 @media screen and (max-width:512px) {
-    .herocontainer{
+    .herocontainer {
         background-color: #020f1f;
         background-color: rgba(0, 0, 0, 0);
         background-blend-mode: overlay;
     }
-    .timeline{
+
+    .timeline {
         flex-direction: column;
         margin-bottom: 70px;
     }
-    .desc{
+
+    .desc {
         margin-bottom: 50px;
     }
-    .btn{
+
+    .btn {
         margin-bottom: 50px;
     }
-    .countdown .time{
+
+    .countdown .time {
         width: 70px;
         padding: 9px 9px;
         font-size: 30px;
         /* box-shadow: 0 0 5px rgba(4, 240, 255, 0.2); */
     }
-    .label{
+
+    .label {
         gap: 30px;
         font-size: 22px;
     }
-    .lowercontent{
+
+    .lowercontent {
         margin-bottom: 100px;
     }
 }

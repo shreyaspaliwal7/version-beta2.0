@@ -1,44 +1,87 @@
-.sponsorscontainer{
-    width: 100%;
-    background:linear-gradient(to bottom, black, #0b0b08);
-    /* min-height: 100vh;
-    padding: 80px 20px; */
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.sponsorscontainer {
+  width: 100%;
+  background: linear-gradient(to bottom, black, #0b0b08);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 20px 60px;
 }
-.sponsorstitle{
-    color: aquamarine;
-    margin-top: 180px;
-    margin-bottom: 60px;
-    font-size:30px;
-    font-weight: bold;
-    font-family: "StateWide",sans-serif;
-    text-shadow: rgb(230, 230, 230) 0px 0px 5px;
+
+.sponsorstitle {
+  color: aquamarine;
+  margin-bottom: 60px;
+  font-size: 2.2rem;
+  font-weight: bold;
+  font-family: "StateWide", sans-serif;
+  text-shadow: rgb(230, 230, 230) 0px 0px 5px;
 }
-.sponsors{
-    width: 90%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px 90px;
-    margin-bottom: 70px;
+
+.sponsors {
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px 60px;
+  padding: 0 10px;
 }
-.sponsors a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.sponsors a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
 }
-*{
-    /* outline: 1px solid lime; */
+
+.sponsors a:hover {
+  transform: scale(1.05);
 }
-.img{
-    width: 180px;
+
+.img {
+  width: 180px;
+  max-width: 100%;
+  object-fit: contain;
 }
-@media screen and (max-width:900px){
-    .img{
-        width: 60px;
-    }
+
+@media screen and (max-width: 1024px) {
+  .sponsorstitle {
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+  }
+
+  .img {
+    width: 140px;
+  }
+
+  .sponsors {
+    gap: 25px 40px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .sponsorstitle {
+    font-size: 1.5rem;
+  }
+
+  .img {
+    width: 100px;
+  }
+
+  .sponsors {
+    gap: 20px 30px;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .img {
+    width: 70px;
+  }
+
+  .sponsorstitle {
+    font-size: 1.3rem;
+  }
 }

@@ -91,7 +91,7 @@ const Hero = () => {
   
 
   return (
-    <div className='herocontainer herofade'>
+    <div className='herocontainer herofade' id="hero">
       
         <div className="content">
         <motion.div className='left' variants={leftvariants} initial="initial" animate="animate">

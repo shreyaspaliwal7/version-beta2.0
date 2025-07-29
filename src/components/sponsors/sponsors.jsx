@@ -1,206 +1,69 @@
-import React from 'react'
-import "./sponsors.css"
+import React from 'react';
+import { motion } from 'framer-motion';
+import './sponsors.css';
+
 const Sponsors = () => {
+ 
+  const directions = ['left', 'right'];
+
   return (
     <div className='sponsorscontainer'>
-      <div className='sponsorstitle'>Sponsors</div>
-      
-      <div className="sponsors">
-        <a href="https://amul.com/index.php" target="blank">
-            <img
-              src="Images/Amul.png"
-              alt=""
-              className='img'
-              loading="lazy"
-            />
-          </a>
-          <a href="https://www.imsindia.com/" target="blank">
-            <img
-              src="Images/IMS.png"
-              alt=""
-              className='img'
-              loading="lazy"
-            />
-          </a>
-          <a href="https://the-dopamine-store.mini.store/" target="blank">
-            <img
-              src="Images/tps.png"
-              alt=""
-              className='img'
-              loading="lazy"
-            />
-          </a>
-        <a href="https://indigg-dev.netlify.app/" target="blank">
-            <img
-              src="Images/Indigg.png"
-              alt=""
-              className='img'
-              loading="lazy"
-            />
-          </a>
-          <a href="https://www.omen.com/" target="blank">
-            <img
-              src="Images/Omen.svg"
-              alt=""
-              className='img'
-              loading="lazy"
-            />
-          </a>
-          <a href="https://www.hitbullseye.com/" target="blank">
-            <img
-              src="Images/Hitbullseye.png"
-              alt=""
-              className='img'
-              loading="lazy"
-            />
-          </a>
-            <a href="https://www.top-one-percent.com/" target="blank">
-            <img
-              src="Images/Top One Percent.png"
-              alt=""
-              className='img'
-              loading="lazy"
-            />
-          </a>
-          <a href="https://www.quillaudits.com/" target="blank">
-            <img
-              src="Images/Quillaudits.png"
-              alt=""
-              className='img'
-              loading="lazy"
-            />
-          </a>
-        <a href="https://gradvine.com/" target="blank">
-            <img
-              src="Images/Gradvine.png"
-              alt=""
-              className='img'
-              loading="lazy"
-            />
-          </a>
-          <a href="https://codingthinker.com/" target="blank">
-            <img
-              src="Images/Coding Thinker.png"
-              alt=""
-              className='img'
-              loading="lazy"
-            />
-          </a>
-          <a href="https://learningwhiletravelling.com/" target="blank">
-            <img
-              src="Images/LWT_logo.webp"
-              alt=""
-              className='img'
-              loading="lazy"
-            />
-          </a>
-          <a href="">
-            <img
-              src="Images/Stubborn Factory.png"
-              alt=""
-              className='img'
-              loading="lazy"
-            />
-          </a>
-          <a href="https://devfolio.co/" target="blank">
-            <img
-              src="Images/devfolio.png"
-              alt=""
-              className='img'
-              loading="lazy"
-            />
-          </a>
-          <a href="https://ethindia.co/" target="blank">
-            <img
-              src="Images/ethindia.svg"
-              alt=""
-              className='img'
-              loading="lazy"
-            />
-          </a>
-          <a href="https://polygon.technology/" target="blank">
-            <img
-              src="Images/polygon.png"
-              alt=""
-              className='img'
-              loading="lazy"
-            />
-          </a>
-          <a href="https://stockedge.com/" target="blank">
-            <img
-              src="Images/stockedge.png"
-              alt=""
-              className='img'
-              loading="lazy"
-            />
-          </a>
-          <a href="https://aptosfoundation.org/" target="blank">
-            <img
-              src="Images/Aptos.png"
-              alt=""
-              className='img'
-              loading="lazy"
-            />
-          </a>
-          <a href="https://www.luzo.app/" target="blank">
-            <img
-              src="Images/luzo1.png"
-              alt=""
-              className='img'
-              loading="lazy"
-            />
-          </a>
-          <a href="https://youngskilledindia.com/" target="blank">
-            <img
-              src="Images/ysi.png"
-              alt=""
-              className='img'
-              loading="lazy"
-            />
-          </a>
-          <a href="https://gen.xyz/" target="blank">
-            <img
-              src="Images/.xyz.png"
-              alt=".xyz logo"
-              className='img'
-              loading="lazy"
-            />
-          </a>
-          <a href="https://www.aceenggacademy.com/" target="blank">
-            <img
-              src="Images/ace.png"
-              alt="ace logo"
-              className='img'
-              loading="lazy"
-            />
-          </a>
-          <a href="https://shotz.in/" target="blank">
-            <img
-              src="Images/spm.png"
-              alt="shotz logo"
-              className='img'
-              loading="lazy"
-            />
-          </a>
-          <a href="https://0x.day/" target="blank">
-            <img
-              src="Images/0x.Day.png"
-              alt="ox.day logo"
-              className='img'
-              loading="lazy"
-            />
-          </a>
-          <a href="https://interviewbuddy.net/" target="blank">
-            <img
-              src="Images/interviewBuddy.webp"
-              alt="coding ninjas logo" 
-              className='img'
-              loading="lazy"
-            />
-          </a>
+      {/* Title Animation */}
+      <motion.div
+        className='abouttitle'
+        initial={{ opacity: 0, y: -40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: 'easeOut' }}
+      >
+        Sponsors
+      </motion.div>
+
+      <div className="sponsors" id="sponsors">
+        {[
+          { href: "https://amul.com/index.php", src: "Images/Amul.png" },
+          { href: "https://www.imsindia.com/", src: "Images/IMS.png" },
+          { href: "https://the-dopamine-store.mini.store/", src: "Images/tps.png" },
+          { href: "https://indigg-dev.netlify.app/", src: "Images/Indigg.png" },
+          { href: "https://www.omen.com/", src: "Images/Omen.svg" },
+          { href: "https://www.hitbullseye.com/", src: "Images/Hitbullseye.png" },
+          { href: "https://www.top-one-percent.com/", src: "Images/Top One Percent.png" },
+          { href: "https://www.quillaudits.com/", src: "Images/Quillaudits.png" },
+          { href: "https://gradvine.com/", src: "Images/Gradvine.png" },
+          { href: "https://codingthinker.com/", src: "Images/Coding Thinker.png" },
+          { href: "https://learningwhiletravelling.com/", src: "Images/LWT_logo.webp" },
+          { href: "", src: "Images/Stubborn Factory.png" },
+          { href: "https://devfolio.co/", src: "Images/devfolio.png" },
+          { href: "https://ethindia.co/", src: "Images/ethindia.svg" },
+          { href: "https://polygon.technology/", src: "Images/polygon.png" },
+          { href: "https://stockedge.com/", src: "Images/stockedge.png" },
+          { href: "https://aptosfoundation.org/", src: "Images/Aptos.png" },
+          { href: "https://www.luzo.app/", src: "Images/luzo1.png" },
+          { href: "https://youngskilledindia.com/", src: "Images/ysi.png" },
+          { href: "https://gen.xyz/", src: "Images/.xyz.png" },
+          { href: "https://www.aceenggacademy.com/", src: "Images/ace.png" },
+          { href: "https://shotz.in/", src: "Images/spm.png" },
+          { href: "https://0x.day/", src: "Images/0x.Day.png" },
+          { href: "https://interviewbuddy.net/", src: "Images/interviewBuddy.webp" },
+        ].map((sponsor, i) => (
+          <motion.a
+            key={i}
+            href={sponsor.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            initial={{
+              opacity: 0,
+              x: directions[i % 2] === 'left' ? -100 : 100
+            }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: i * 0.05, ease: 'easeOut' }}
+          >
+            <img src={sponsor.src} alt="" className="img" loading="lazy" />
+          </motion.a>
+        ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Sponsors
+export default Sponsors;

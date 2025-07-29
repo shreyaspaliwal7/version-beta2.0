@@ -12,6 +12,7 @@ import Prizes from './components/Prizes/prizes'
 import Gallery3 from './components/gallery/gallery'
 import Sponsors from './components/sponsors/sponsors'
 import Faqs from './components/faqs/faqs'
+import Footer from './components/footer/footer';
 function App() {
   const [count, setCount] = useState(0)
 
@@ -37,6 +38,7 @@ function App() {
         <Gallery3/>
         <Sponsors/>
         <Faqs/>
+        <Footer/>
       </div>
     </>
   )
