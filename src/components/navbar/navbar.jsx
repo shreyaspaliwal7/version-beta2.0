@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import "./Navbar.css";
+import "./navbar.css";
 import logo from "../../assets/newlogo.png";
 import { motion } from "framer-motion";
 

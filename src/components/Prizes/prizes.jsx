@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState,useEffect,useRef} from 'react'
-import "./Prizes.css"
+import "./prizes.css"
 import one from "../../assets/one.png"
 import second from "../../assets/second.png"
 import third from "../../assets/third.png"
